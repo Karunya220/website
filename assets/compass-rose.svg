@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="gold" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="paper" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#E8DCC1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C2B280;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Outer Circle -->
+  <circle cx="100" cy="100" r="98" fill="url(#paper)" stroke="#3E2F2B" stroke-width="2" />
+  
+  <!-- Ornate Border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#964B00" stroke-width="1" stroke-dasharray="2,2" />
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#964B00" stroke-width="1" />
+  
+  <!-- Main Compass Points -->
+  <polygon points="100,10 105,90 100,95 95,90" fill="#3E2F2B" />
+  <polygon points="100,190 105,110 100,105 95,110" fill="#3E2F2B" />
+  <polygon points="10,100 90,105 95,100 90,95" fill="#964B00" />
+  <polygon points="190,100 110,105 105,100 110,95" fill="#964B00" />
+  
+  <!-- Intermediate Points -->
+  <polygon points="29.3,29.3 92.5,92.5 100,100 92.5,107.5" fill="#556B2F" transform="rotate(45 100 100)" />
+  <polygon points="29.3,29.3 92.5,92.5 100,100 92.5,107.5" fill="#556B2F" transform="rotate(135 100 100)" />
+  <polygon points="29.3,29.3 92.5,92.5 100,100 92.5,107.5" fill="#556B2F" transform="rotate(225 100 100)" />
+  <polygon points="29.3,29.3 92.5,92.5 100,100 92.5,107.5" fill="#556B2F" transform="rotate(315 100 100)" />
+  
+  <!-- Direction Letters -->
+  <text x="100" y="25" text-anchor="middle" font-family="'Playfair Display', serif" font-size="14" font-weight="bold" fill="#3E2F2B">N</text>
+  <text x="100" y="185" text-anchor="middle" font-family="'Playfair Display', serif" font-size="14" font-weight="bold" fill="#3E2F2B">S</text>
+  <text x="185" y="105" text-anchor="middle" font-family="'Playfair Display', serif" font-size="14" font-weight="bold" fill="#964B00">E</text>
+  <text x="15" y="105" text-anchor="middle" font-family="'Playfair Display', serif" font-size="14" font-weight="bold" fill="#964B00">W</text>
+  
+  <!-- Center Decoration -->
+  <circle cx="100" cy="100" r="20" fill="url(#gold)" stroke="#3E2F2B" stroke-width="1" />
+  <circle cx="100" cy="100" r="15" fill="none" stroke="#3E2F2B" stroke-width="0.5" />
+  <circle cx="100" cy="100" r="5" fill="#3E2F2B" />
+  
+  <!-- Decorative Lines -->
+  <line x1="30" y1="100" x2="80" y2="100" stroke="#556B2F" stroke-width="0.5" />
+  <line x1="120" y1="100" x2="170" y2="100" stroke="#556B2F" stroke-width="0.5" />
+  <line x1="100" y1="30" x2="100" y2="80" stroke="#556B2F" stroke-width="0.5" />
+  <line x1="100" y1="120" x2="100" y2="170" stroke="#556B2F" stroke-width="0.5" />
+</svg>

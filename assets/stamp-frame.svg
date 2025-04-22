@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="stamp">
+  <defs>
+    <filter id="stampEdge">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="5" seed="3" />
+      <feDisplacementMap in="SourceGraphic" scale="5" />
+    </filter>
+    <pattern id="stampPattern" patternUnits="userSpaceOnUse" width="10" height="10">
+      <rect width="10" height="10" fill="#964B00" fill-opacity="0.1" />
+      <path d="M0,0 L10,10 M10,0 L0,10" stroke="#3E2F2B" stroke-width="0.5" stroke-opacity="0.1" />
+    </pattern>
+  </defs>
+  
+  <!-- Stamp Background with Torn Edge Effect -->
+  <rect x="5" y="5" width="90" height="90" rx="5" ry="5" fill="url(#stampPattern)" filter="url(#stampEdge)" />
+  
+  <!-- Stamp Border -->
+  <rect x="10" y="10" width="80" height="80" rx="3" ry="3" fill="none" stroke="#3E2F2B" stroke-width="2" stroke-dasharray="4 2" />
+  
+  <!-- Inner Decorative Elements -->
+  <rect x="15" y="15" width="70" height="70" rx="2" ry="2" fill="none" stroke="#3E2F2B" stroke-width="1" />
+  
+  <!-- Stamp Circles (simulating ink impressions) -->
+  <circle cx="20" cy="20" r="2" fill="#3E2F2B" fill-opacity="0.7" />
+  <circle cx="80" cy="20" r="2" fill="#3E2F2B" fill-opacity="0.7" />
+  <circle cx="20" cy="80" r="2" fill="#3E2F2B" fill-opacity="0.7" />
+  <circle cx="80" cy="80" r="2" fill="#3E2F2B" fill-opacity="0.7" />
+</svg>
